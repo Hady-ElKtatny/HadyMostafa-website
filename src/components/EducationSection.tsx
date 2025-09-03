@@ -1,4 +1,5 @@
-import image_eb03af903e5fd65d014c35e5668f5fec83bbac97 from 'figma:asset/eb03af903e5fd65d014c35e5668f5fec83bbac97.png';
+import image_eb208481d0d2bf30de6b5ca869a84d9a64786b5b from '../assets/eb208481d0d2bf30de6b5ca869a84d9a64786b5b.png';
+
 import { GraduationCap, Award, BookOpen, Calendar, MapPin } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 

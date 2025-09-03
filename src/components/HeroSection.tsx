@@ -1,5 +1,5 @@
-import image_eb208481d0d2bf30de6b5ca869a84d9a64786b5b from 'figma:asset/eb208481d0d2bf30de6b5ca869a84d9a64786b5b.png';
-import image_a56c0028dad48f1928912a11918798f556c45385 from 'figma:asset/a56c0028dad48f1928912a11918798f556c45385.png';
+import image_eb208481d0d2bf30de6b5ca869a84d9a64786b5b from '../assets/eb208481d0d2bf30de6b5ca869a84d9a64786b5b.png';
+import image_a56c0028dad48f1928912a11918798f556c45385 from '../assets/a56c0028dad48f1928912a11918798f556c45385.png';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function HeroSection() {
@@ -36,7 +36,7 @@ export function HeroSection() {
  make decisions that improve people’s day-to-day. My current roles enable this
  passion by giving me hands-on opportunities to manage projects end-to-end,
  apply analytics to real problems, and communicate insights to decision
-makers. I’m actively building a portfolio of applied projects and continuing
+ makers. I’m actively building a portfolio of applied projects and continuing
  formal studies (Udacity Nanodegrees in Business Analysis & Digital
  Freelancing) so I can move from analysis to scalable, production-ready
  solutions.   
