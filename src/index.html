@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hady Mostafa - Personal Website</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Hady Mostafa</div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('experience')" class="nav-link">Experience</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link">Skills</button>
+                    <button onclick="scrollToSection('education')" class="nav-link">Education</button>
+                    <button onclick="scrollToSection('volunteer')" class="nav-link">Volunteer</button>
+                    <button onclick="scrollToSection('elevator-pitch')" class="nav-link">Pitch</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger" id="hamburger">☰</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-nav" class="mobile-nav">
+                <nav class="mobile-nav-content">
+                    <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                    <button onclick="scrollToSection('portfolio')" class="mobile-nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('experience')" class="mobile-nav-link">Experience</button>
+                    <button onclick="scrollToSection('skills')" class="mobile-nav-link">Skills</button>
+                    <button onclick="scrollToSection('education')" class="mobile-nav-link">Education</button>
+                    <button onclick="scrollToSection('volunteer')" class="mobile-nav-link">Volunteer</button>
+                    <button onclick="scrollToSection('elevator-pitch')" class="mobile-nav-link">Pitch</button>
+                    <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hello, I'm <span class="hero-name">Hady Mostafa</span>
+                    </h1>
+                    <p class="hero-description">
+                        Computer Science Student | AI & Data Science Enthusiast. 
+                        Level 3 Computer Science student at Thebes Academy, passionate about AI, data analysis, and building impactful solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <button onclick="scrollToSection('contact')" class="btn-primary">Contact Me</button>
+                        <button class="btn-secondary">Download Resume</button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTYxNjE3MDR8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                             alt="Profile Picture" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <p class="section-description">
+                    A collection of my work and achievements in development and technology
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- YouTube Video Link -->
+                <div class="portfolio-card youtube-card">
+                    <div class="card-icon youtube-icon">▶</div>
+                    <h3 class="card-title">Video Presentation</h3>
+                    <p class="card-description">
+                        Watch a presentation showcasing one of my most important tech projects,
+                        demonstrating how to solve complex problems with innovative approaches.
+                    </p>
+                    <div class="card-action">
+                        <a href="https://youtu.be/3p43BO4v8Js?si=SKv8mR-4DThQtnVc" 
+                           target="_blank" rel="noopener noreferrer" class="btn-youtube">
+                            <span>▶</span> Watch Video <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide Deck Link -->
+                <div class="portfolio-card slides-card">
+                    <div class="card-icon slides-icon">📄</div>
+                    <h3 class="card-title">Slide Deck</h3>
+                    <p class="card-description">
+                        Browse through my presentation slides containing project details,
+                        technologies used, and achieved results.
+                    </p>
+                    <div class="card-action">
+                        <a href="https://www.canva.com/design/DAGvxg9jmnY/KUm0U5Tv8Kh-WAKD47aR0Q/edit?utm_content=DAGvxg9jmnY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                           target="_blank" rel="noopener noreferrer" class="btn-slides">
+                            <span>📄</span> View Slides <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Portfolio Items -->
+            <div class="portfolio-additional">
+                <h3 class="additional-title">Other Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h4 class="project-title">Ummah News</h4>
+                        <p class="project-description">Data Analysis and Project Management</p>
+                        <span class="project-tech">Python, Tableau</span>
+                    </div>
+                    <div class="project-item">
+                        <h4 class="project-title">E-Learning Platform</h4>
+                        <p class="project-description">Interactive educational platform for students and teachers</p>
+                        <span class="project-tech">Vue.js, Laravel, MySQL</span>
+                    </div>
+                    <div class="project-item">
+                        <h4 class="project-title">Inventory Management System</h4>
+                        <p class="project-description">Comprehensive system for inventory and sales management</p>
+                        <span class="project-tech">Angular, .NET Core, SQL Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">
+                    My professional journey and career progression in software development
+                </p>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="work-experience">
+                <div class="section-subheader">
+                    <div class="section-icon work-icon">💼</div>
+                    <h3 class="section-subtitle">Work Experience</h3>
+                </div>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Senior Software Developer</h4>
+                            <div class="experience-period">📅 2022 - Present</div>
+                        </div>
+                        <div class="experience-company">
+                            <p class="company-name">Advanced Tech Solutions</p>
+                            <div class="company-location">📍 Riyadh, Saudi Arabia</div>
+                        </div>
+                        <p class="experience-description">
+                            Leading a team developing web and mobile applications, creating innovative solutions for clients.
+                        </p>
+                        <div class="achievements">
+                            <h5 class="achievements-title">Key Achievements:</h5>
+                            <ul class="achievements-list">
+                                <li>Developed 15+ successful web applications</li>
+                                <li>Increased team efficiency by 40%</li>
+                                <li>Reduced development time by 30%</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 class="experience-title">Frontend Developer</h4>
+                            <div class="experience-period">📅 2020 - 2022</div>
+                        </div>
+                        <div class="experience-company">
+                            <p class="company-name">Digital Solutions Company</p>
+                            <div class="company-location">📍 Jeddah, Saudi Arabia</div>
+                        </div>
+                        <p class="experience-description">
+                            Developing interactive user interfaces and improving user experience.
+                        </p>
+                        <div class="achievements">
+                            <h5 class="achievements-title">Key Achievements:</h5>
+                            <ul class="achievements-list">
+                                <li>Built 10+ responsive websites</li>
+                                <li>Improved loading speed by 50%</li>
+                                <li>Implemented digital accessibility standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Timeline -->
+            <div class="career-timeline">
+                <h3 class="timeline-title">Career Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-event">Purchasing Manager</div>
+                            <div class="timeline-desc">Promoted to senior role, leading development teams</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-event">Frontend Developer</div>
+                            <div class="timeline-desc">Started professional career in web development</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-event">University Graduation</div>
+                            <div class="timeline-desc">Graduated with Bachelor of Computer Science</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-event">Future Goals</div>
+                            <div class="timeline-desc">Aspiring to become a tech lead and mentor</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="professional-summary">
+                <h3 class="summary-title">Professional Summary</h3>
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <div class="stat-number blue">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number green">25+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple">3+</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number orange">10+</div>
+                        <div class="stat-label">Team Members Led</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    A comprehensive overview of my technical expertise and proficiency levels
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌐</div>
+                        <h3 class="category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React/Next.js</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🖥️</div>
+                        <h3 class="category-title">Backend Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">.NET Core</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP/Laravel</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Cloud -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🗄️</div>
+                        <h3 class="category-title">Database & Cloud</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Azure</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3 class="category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Summary -->
+            <div class="skills-summary">
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <div class="stat-number blue">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number green">15+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple">25+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number orange">50+</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Learning</h2>
+                <p class="section-description">
+                    My academic journey and continuous learning path in technology
+                </p>
+            </div>
+
+            <!-- Formal Education -->
+            <div class="formal-education">
+                <div class="section-subheader">
+                    <div class="section-icon education-icon">🎓</div>
+                    <h3 class="section-subtitle">Formal Education</h3>
+                </div>
+
+                <div class="education-list">
+                    <div class="education-item">
+                        <div class="education-content">
+                            <div class="education-header">
+                                <h4 class="education-degree">Bachelor of Computer Science</h4>
+                                <div class="education-period">📅 2018 - 2022</div>
+                            </div>
+                            <p class="education-institution">King Saud University</p>
+                            <div class="education-location">📍 Riyadh, Saudi Arabia</div>
+                            <div class="education-grade">3.8/4.0 GPA</div>
+                            <p class="education-description">
+                                Specialized in Software Engineering with focus on web development and database systems.
+                            </p>
+                            
+                            <div class="achievements">
+                                <h5 class="achievements-title">Achievements:</h5>
+                                <ul class="achievements-list">
+                                    <li>🏆 Dean's List for 3 consecutive semesters</li>
+                                    <li>🏆 Best Graduation Project Award</li>
+                                    <li>🏆 Member of Computer Science Honor Society</li>
+                                </ul>
+                            </div>
+
+                            <div class="courses">
+                                <h5 class="courses-title">Key Courses:</h5>
+                                <div class="courses-tags">
+                                    <span class="course-tag">Data Structures & Algorithms</span>
+                                    <span class="course-tag">Software Engineering</span>
+                                    <span class="course-tag">Database Management Systems</span>
+                                    <span class="course-tag">Web Development</span>
+                                    <span class="course-tag">Mobile Application Development</span>
+                                    <span class="course-tag">Computer Networks</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-image">
+                            <img src="https://images.unsplash.com/photo-1653945475246-78f575f7c112?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjB1bml2ZXJzaXR5JTIwZ3JhZHVhdGlvbnxlbnwxfHx8fDE3NTYxNjEzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 alt="University Campus" class="university-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online Courses -->
+            <div class="online-courses">
+                <div class="section-subheader">
+                    <div class="section-icon courses-icon">📚</div>
+                    <h3 class="section-subtitle">Continuous Learning</h3>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-item">
+                        <div class="course-header">
+                            <h4 class="course-title">Advanced React Development</h4>
+                            <span class="course-year">2023</span>
+                        </div>
+                        <p class="course-provider">Meta</p>
+                        <p class="course-platform">Coursera • 6 weeks</p>
+                        <div class="course-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Redux</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-header">
+                            <h4 class="course-title">AWS Cloud Practitioner</h4>
+                            <span class="course-year">2023</span>
+                        </div>
+                        <p class="course-provider">Amazon Web Services</p>
+                        <p class="course-platform">AWS Training • 4 weeks</p>
+                        <div class="course-skills">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">DevOps</span>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-header">
+                            <h4 class="course-title">Full Stack Web Development</h4>
+                            <span class="course-year">2022</span>
+                        </div>
+                        <p class="course-provider">FreeCodeCamp</p>
+                        <p class="course-platform">FreeCodeCamp • 12 weeks</p>
+                        <div class="course-skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="course-item">
+                        <div class="course-header">
+                            <h4 class="course-title">Machine Learning Fundamentals</h4>
+                            <span class="course-year">2023</span>
+                        </div>
+                        <p class="course-provider">Stanford University</p>
+                        <p class="course-platform">Coursera • 8 weeks</p>
+                        <div class="course-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Achievements -->
+            <div class="academic-achievements">
+                <div class="section-subheader">
+                    <div class="section-icon achievements-icon">🏆</div>
+                    <h3 class="section-subtitle">Academic Achievements</h3>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🏆</div>
+                        <h4 class="achievement-title">Best Graduation Project</h4>
+                        <p class="achievement-description">Developed an AI-powered learning management system</p>
+                        <span class="achievement-year">2022</span>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">🥇</div>
+                        <h4 class="achievement-title">Hackathon Winner</h4>
+                        <p class="achievement-description">First place in Saudi Arabia Developer Conference Hackathon</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">📚</div>
+                        <h4 class="achievement-title">Research Publication</h4>
+                        <p class="achievement-description">Co-authored paper on 'Modern Web Development Practices'</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon">👨‍🏫</div>
+                        <h4 class="achievement-title">Teaching Assistant</h4>
+                        <p class="achievement-description">TA for Web Development course at King Saud University</p>
+                        <span class="achievement-year">2021-2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Philosophy -->
+            <div class="learning-philosophy">
+                <h3 class="philosophy-title">Learning Philosophy</h3>
+                <p class="philosophy-quote">
+                    "Education is not preparation for life; education is life itself. I believe in continuous learning 
+                    and staying updated with the latest technologies to deliver the best solutions."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Volunteer Work & Community Impact</h2>
+                <p class="section-description">
+                    Giving back to the community through technology education and digital empowerment initiatives
+                </p>
+            </div>
+
+            <!-- Volunteer Experience -->
+            <div class="volunteer-experience">
+                <div class="section-subheader">
+                    <div class="section-icon volunteer-icon">❤️</div>
+                    <h3 class="section-subtitle">Volunteer Experience</h3>
+                </div>
+
+                <div class="volunteer-list">
+                    <!-- First Volunteer Experience -->
+                    <div class="volunteer-item">
+                        <div class="volunteer-content">
+                            <div class="volunteer-header">
+                                <h4 class="volunteer-title">Event Manager and coordinator</h4>
+                                <div class="volunteer-period">📅 Feb 2025 to date</div>
+                            </div>
+                            <p class="volunteer-organization">TEDxMillennium</p>
+                            <div class="volunteer-location">📍 Ministry of youth and sports, Egypt</div>
+                            <p class="volunteer-description">
+                                Training youth in prog.
+                            </p>
+                            
+                            <div class="impact-box">
+                                <div class="impact-icon">🎯</div>
+                                <div>
+                                    <span class="impact-label">Impact Achieved:</span>
+                                    <p class="impact-text">Trained the organizing team,Manage the event 500+ attendee</p>
+                                </div>
+                            </div>
+
+                            <div class="activities">
+                                <h5 class="activities-title">Key Activities:</h5>
+                                <ul class="activities-list">
+                                    <li>Designed and delivered 50+ programming workshops</li>
+                                    <li>Mentored 30+ students in their first programming projects</li>
+                                    <li>Created open-source learning materials for beginners</li>
+                                    <li>Organized coding bootcamps for high school students</li>
+                                </ul>
+                            </div>
+
+                            <div class="volunteer-skills">
+                                <h5 class="skills-title">Skills Utilized:</h5>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Training</span>
+                                    <span class="skill-tag">Event Management</span>
+                                    <span class="skill-tag">Mentoring</span>
+                                    <span class="skill-tag">Logistics</span>
+                                    <span class="skill-tag">Event Planning</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="volunteer-image">
+                            <img src="https://images.unsplash.com/photo-1751666526244-40239a251eae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXJpbmclMjBjb21tdW5pdHklMjBzZXJ2aWNlfGVufDF8fHx8MTc1NjE1OTY2OXww&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 alt="Volunteer Activities" class="volunteer-activity-image">
+                        </div>
+                    </div>
+
+                    <!-- Second Volunteer Experience -->
+                    <div class="volunteer-item">
+                        <div class="volunteer-content">
+                            <div class="volunteer-header">
+                                <h4 class="volunteer-title">Technical Coordinator</h4>
+                                <div class="volunteer-period">📅 2020 - 2023</div>
+                            </div>
+                            <p class="volunteer-organization">Saudi Developers Association</p>
+                            <div class="volunteer-location">📍 Riyadh, Saudi Arabia</div>
+                            <p class="volunteer-description">
+                                Organizing tech events and workshops for developers in the Kingdom. Building a community of passionate developers and fostering knowledge sharing.
+                            </p>
+                            
+                            <div class="impact-box">
+                                <div class="impact-icon">🎯</div>
+                                <div>
+                                    <span class="impact-label">Impact Achieved:</span>
+                                    <p class="impact-text">Organized 25+ tech events</p>
+                                </div>
+                            </div>
+
+                            <div class="activities">
+                                <h5 class="activities-title">Key Activities:</h5>
+                                <ul class="activities-list">
+                                    <li>Coordinated monthly developer meetups (500+ attendees)</li>
+                                    <li>Organized annual tech conference with 1000+ participants</li>
+                                    <li>Built partnerships with international tech companies</li>
+                                    <li>Created mentorship programs for junior developers</li>
+                                </ul>
+                            </div>
+
+                            <div class="volunteer-skills">
+                                <h5 class="skills-title">Skills Utilized:</h5>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Event Management</span>
+                                    <span class="skill-tag">Community Building</span>
+                                    <span class="skill-tag">Partnership Development</span>
+                                    <span class="skill-tag">Public Speaking</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="volunteer-image">
+                            <img src="https://images.unsplash.com/photo-1751666526244-40239a251eae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXJpbmclMjBjb21tdW5pdHklMjBzZXJ2aWNlfGVufDF8fHx8MTc1NjE1OTY2OXww&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 alt="Volunteer Activities" class="volunteer-activity-image">
+                        </div>
+                    </div>
+
+                    <!-- Third Volunteer Experience -->
+                    <div class="volunteer-item">
+                        <div class="volunteer-content">
+                            <div class="volunteer-header">
+                                <h4 class="volunteer-title">Digital Literacy Volunteer</h4>
+                                <div class="volunteer-period">📅 2019 - 2021</div>
+                            </div>
+                            <p class="volunteer-organization">Saudi Red Crescent Society</p>
+                            <div class="volunteer-location">📍 Riyadh, Saudi Arabia</div>
+                            <p class="volunteer-description">
+                                Teaching basic computer skills and internet safety to elderly citizens and underserved communities.
+                            </p>
+                            
+                            <div class="impact-box">
+                                <div class="impact-icon">🎯</div>
+                                <div>
+                                    <span class="impact-label">Impact Achieved:</span>
+                                    <p class="impact-text">Helped 150+ individuals become digitally literate</p>
+                                </div>
+                            </div>
+
+                            <div class="activities">
+                                <h5 class="activities-title">Key Activities:</h5>
+                                <ul class="activities-list">
+                                    <li>Conducted weekly digital literacy classes</li>
+                                    <li>Created simplified guides for smartphone usage</li>
+                                    <li>Organized digital safety awareness campaigns</li>
+                                    <li>Provided one-on-one support for elderly learners</li>
+                                </ul>
+                            </div>
+
+                            <div class="volunteer-skills">
+                                <h5 class="skills-title">Skills Utilized:</h5>
+                                <div class="skills-tags">
+                                    <span class="skill-tag">Teaching</span>
+                                    <span class="skill-tag">Patience</span>
+                                    <span class="skill-tag">Communication</span>
+                                    <span class="skill-tag">Empathy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="volunteer-image">
+                            <img src="https://images.unsplash.com/photo-1751666526244-40239a251eae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2b2x1bnRlZXJpbmclMjBjb21tdW5pdHklMjBzZXJ2aWNlfGVufDF8fHx8MTc1NjE1OTY2OXww&ixlib=rb-4.1.0&q=80&w=1080" 
+                                 alt="Volunteer Activities" class="volunteer-activity-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Causes I Support -->
+            <div class="causes-section">
+                <div class="section-subheader">
+                    <div class="section-icon causes-icon">👥</div>
+                    <h3 class="section-subtitle">Causes I Support</h3>
+                </div>
+
+                <div class="causes-grid">
+                    <div class="cause-item">
+                        <div class="cause-icon">💻</div>
+                        <h4 class="cause-name">Education Technology</h4>
+                        <p class="cause-description">Making quality tech education accessible to everyone</p>
+                        <span class="cause-involvement">3 years</span>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-icon">🌐</div>
+                        <h4 class="cause-name">Digital Inclusion</h4>
+                        <p class="cause-description">Bridging the digital divide in Saudi communities</p>
+                        <span class="cause-involvement">4 years</span>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-icon">🚀</div>
+                        <h4 class="cause-name">Youth Empowerment</h4>
+                        <p class="cause-description">Empowering young people through technology skills</p>
+                        <span class="cause-involvement">3 years</span>
+                    </div>
+
+                    <div class="cause-item">
+                        <div class="cause-icon">🔓</div>
+                        <h4 class="cause-name">Open Source</h4>
+                        <p class="cause-description">Contributing to open source projects and communities</p>
+                        <span class="cause-involvement">2 years</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recognition & Awards -->
+            <div class="awards-section">
+                <div class="section-subheader">
+                    <div class="section-icon awards-icon">🏆</div>
+                    <h3 class="section-subtitle">Recognition & Awards</h3>
+                </div>
+
+                <div class="awards-grid">
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Outstanding Volunteer Award</h4>
+                            <p class="award-organization">Tech Education Foundation</p>
+                            <p class="award-description">Recognized for exceptional dedication to tech education</p>
+                            <span class="award-year">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Community Builder of the Year</h4>
+                            <p class="award-organization">Saudi Developers Association</p>
+                            <p class="award-description">For building and nurturing the local developer community</p>
+                            <span class="award-year">2022</span>
+                        </div>
+                    </div>
+
+                    <div class="award-item">
+                        <div class="award-icon">🏆</div>
+                        <div class="award-content">
+                            <h4 class="award-title">Digital Inclusion Champion</h4>
+                            <p class="award-organization">Saudi Red Crescent Society</p>
+                            <p class="award-description">For outstanding work in digital literacy programs</p>
+                            <span class="award-year">2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volunteer Impact Summary -->
+            <div class="volunteer-summary">
+                <h3 class="summary-title">Overall Impact</h3>
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <div class="stat-number green">200+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number blue">25+</div>
+                        <div class="stat-label">Events Organized</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple">150+</div>
+                        <div class="stat-label">People Helped</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number orange">4</div>
+                        <div class="stat-label">Years of Service</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="volunteer-cta">
+                <h3 class="cta-title">Want to Make a Difference Together?</h3>
+                <p class="cta-description">
+                    I'm always looking for new volunteer opportunities and ways to give back to the community.
+                </p>
+                <button onclick="scrollToSection('contact')" class="cta-button">Get In Touch</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elevator Pitch Section -->
+    <section id="elevator-pitch" class="elevator-pitch-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Elevator Pitch</h2>
+                <p class="section-description">
+                    A concise overview of who I am and what I bring to the table
+                </p>
+            </div>
+
+            <div class="pitch-content">
+                <div class="pitch-video">
+                    <div class="video-placeholder">
+                        <div class="video-icon">🎥</div>
+                        <h3 class="video-title">Elevator Pitch Video</h3>
+                        <p class="video-description">
+                            Watch my 60-second elevator pitch explaining my background, skills, and career aspirations.
+                        </p>
+                        <button class="video-btn">▶ Watch Pitch</button>
+                    </div>
+                </div>
+
+                <div class="pitch-text">
+                    <h3 class="pitch-title">Quick Introduction</h3>
+                    <div class="pitch-content-text">
+                        <p>
+                            "Hi, I'm Hady Mostafa, a passionate Computer Science student at Thebes Academy with a strong focus on 
+                            AI and data science. With over 5 years of hands-on experience in software development, I've successfully 
+                            delivered 25+ projects ranging from web applications to machine learning solutions.
+                        </p>
+                        <p>
+                            What sets me apart is my ability to bridge the gap between complex technical concepts and practical 
+                            business solutions. I've led development teams, mentored 200+ students through volunteer programs, 
+                            and consistently delivered projects that exceed expectations.
+                        </p>
+                        <p>
+                            I'm currently seeking opportunities where I can leverage my technical expertise and leadership skills 
+                            to drive innovation and make a meaningful impact in the AI and technology space."
+                        </p>
+                    </div>
+
+                    <div class="pitch-highlights">
+                        <h4 class="highlights-title">Key Highlights:</h4>
+                        <ul class="highlights-list">
+                            <li>✅ 5+ years of software development experience</li>
+                            <li>✅ Expertise in AI, data science, and full-stack development</li>
+                            <li>✅ Led teams and delivered 25+ successful projects</li>
+                            <li>✅ Active community contributor and mentor</li>
+                            <li>✅ Strong problem-solving and communication skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Have a project in mind or just want to chat? I'd love to hear from you. 
+                    Let's create something amazing together!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        <div class="contact-icon">💬</div>
+                        <h3 class="contact-title">Get In Touch</h3>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Email</h4>
+                                <a href="mailto:ahmed@example.com" class="method-value">ahmed@example.com</a>
+                                <p class="method-description">Send me an email anytime</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Phone</h4>
+                                <a href="tel:+966501234567" class="method-value">+966 50 123 4567</a>
+                                <p class="method-description">Call me during business hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Location</h4>
+                                <span class="method-value">Riyadh, Saudi Arabia</span>
+                                <p class="method-description">Available for local meetings</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">⏰</div>
+                            <div class="method-details">
+                                <h4 class="method-title">Response Time</h4>
+                                <span class="method-value">Within 24 hours</span>
+                                <p class="method-description">I typically respond quickly</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links-section">
+                        <h4 class="social-title">Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/hady-mostafa-74h101156/" target="_blank" rel="noopener noreferrer" class="social-link linkedin">
+                                <span class="social-icon">💼</span>
+                            </a>
+                            <a href="https://github.com/ahmad-mohammed" target="_blank" rel="noopener noreferrer" class="social-link github">
+                                <span class="social-icon">🐱</span>
+                            </a>
+                            <a href="https://twitter.com/ahmad_mohammed" target="_blank" rel="noopener noreferrer" class="social-link twitter">
+                                <span class="social-icon">🐦</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Messages -->
+                    <div class="quick-messages">
+                        <h4 class="quick-title">Quick Messages</h4>
+                        <div class="quick-buttons">
+                            <button onclick="setQuickMessage('I\\'d like to discuss a project opportunity')" class="quick-btn">
+                                "I'd like to discuss a project opportunity"
+                            </button>
+                            <button onclick="setQuickMessage('I\\'m interested in collaboration')" class="quick-btn">
+                                "I'm interested in collaboration"
+                            </button>
+                            <button onclick="setQuickMessage('I have a question about your work')" class="quick-btn">
+                                "I have a question about your work"
+                            </button>
+                            <button onclick="setQuickMessage('I\\'d like to schedule a meeting')" class="quick-btn">
+                                "I'd like to schedule a meeting"
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send Me a Message</h3>
+                    
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                      placeholder="Tell me about your project, idea, or just say hello..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <span class="btn-text">📤 Send Message</span>
+                            <span class="btn-loading" style="display: none;">⏳ Sending...</span>
+                        </button>
+                    </form>
+
+                    <div class="form-footer">
+                        <p class="form-note">
+                            * Required fields. I respect your privacy and will never share your information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Contact Options -->
+            <div class="additional-contact">
+                <h3 class="additional-title">Prefer Other Ways to Connect?</h3>
+                <p class="additional-description">
+                    I'm active on various platforms and always open to new connections and opportunities.
+                </p>
+                
+                <div class="additional-options">
+                    <div class="option-card">
+                        <div class="option-icon">📅</div>
+                        <h4 class="option-title">Schedule a Call</h4>
+                        <p class="option-description">
+                            Book a 30-minute discovery call to discuss your project
+                        </p>
+                        <button class="option-btn">Book Meeting</button>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">💬</div>
+                        <h4 class="option-title">WhatsApp</h4>
+                        <p class="option-description">
+                            Send me a quick message on WhatsApp
+                        </p>
+                        <button class="option-btn">Chat Now</button>
+                    </div>
+                    
+                    <div class="option-card">
+                        <div class="option-icon">💼</div>
+                        <h4 class="option-title">LinkedIn</h4>
+                        <p class="option-description">
+                            Connect with me professionally on LinkedIn
+                        </p>
+                        <button class="option-btn">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Me</h3>
+                    <div class="footer-links">
+                        <div class="footer-link">
+                            <span class="footer-icon">📧</span>
+                            <a href="mailto:ahmed@example.com">ahmed@example.com</a>
+                        </div>
+                        <div class="footer-link">
+                            <span class="footer-icon">📞</span>
+                            <a href="tel:+966501234567">+966 50 123 4567</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/hady-mostafa-74h101156/" target="_blank" rel="noopener noreferrer" class="footer-social-link linkedin">
+                            <span class="social-icon">💼</span>
+                        </a>
+                        <a href="https://github.com/ahmad-mohammed" target="_blank" rel="noopener noreferrer" class="footer-social-link github">
+                            <span class="social-icon">🐱</span>
+                        </a>
+                        <a href="https://twitter.com/ahmad_mohammed" target="_blank" rel="noopener noreferrer" class="footer-social-link twitter">
+                            <span class="social-icon">🐦</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-navigation">
+                        <button onclick="scrollToSection('about')" class="footer-nav-link">About</button>
+                        <button onclick="scrollToSection('portfolio')" class="footer-nav-link">Portfolio</button>
+                        <button onclick="scrollToSection('experience')" class="footer-nav-link">Experience</button>
+                        <button onclick="scrollToSection('skills')" class="footer-nav-link">Skills</button>
+                        <button onclick="scrollToSection('education')" class="footer-nav-link">Education</button>
+                        <button onclick="scrollToSection('volunteer')" class="footer-nav-link">Volunteer</button>
+                        <button onclick="scrollToSection('elevator-pitch')" class="footer-nav-link">Pitch</button>
+                        <button onclick="scrollToSection('contact')" class="footer-nav-link">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Ahmed Mohammed. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
